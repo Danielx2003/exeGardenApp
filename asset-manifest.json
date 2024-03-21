@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/exeGardenApp/static/css/main.48f1e543.css",
+    "main.js": "/exeGardenApp/static/js/main.37968fc1.js",
+    "static/media/Background Raining.png": "/exeGardenApp/static/media/Background Raining.e671db7cf4b4cf267da9.png",
+    "static/media/Background Night Raining.png": "/exeGardenApp/static/media/Background Night Raining.1ce848acd1a3c966d226.png",
+    "static/media/Background Snowing Night.png": "/exeGardenApp/static/media/Background Snowing Night.242eb106f6769b54ab78.png",
+    "static/media/Background Snowing.png": "/exeGardenApp/static/media/Background Snowing.609fbeb083606e3e46c2.png",
+    "static/media/Background Clear Night.png": "/exeGardenApp/static/media/Background Clear Night.30c0098eb534c634b24e.png",
+    "static/media/Background Sunny.png": "/exeGardenApp/static/media/Background Sunny.639f784019825215e03e.png",
+    "static/media/Background Night Overcast.png": "/exeGardenApp/static/media/Background Night Overcast.db6bdcb1c4a37f617da6.png",
+    "static/media/Background Overcast.png": "/exeGardenApp/static/media/Background Overcast.c42fd50874f97ced6c2a.png",
+    "static/media/Marigold Red.png": "/exeGardenApp/static/media/Marigold Red.3bbfa8f0e2d599f73aa1.png",
+    "static/media/Marigold Orange.png": "/exeGardenApp/static/media/Marigold Orange.f07b3740a40ca626c738.png",
+    "static/media/Marigold Yellow.png": "/exeGardenApp/static/media/Marigold Yellow.f6d71cefd3fc050c0950.png",
+    "static/media/Sunflower.png": "/exeGardenApp/static/media/Sunflower.d3f404d96667c15d8bbb.png",
+    "static/media/Bluebell Lilac.png": "/exeGardenApp/static/media/Bluebell Lilac.0bbe7357bb906dc89c9f.png",
+    "static/media/Bluebell Pale.png": "/exeGardenApp/static/media/Bluebell Pale.232d92c7e8085b1c8e73.png",
+    "static/media/Bluebell Deep.png": "/exeGardenApp/static/media/Bluebell Deep.84bdb90ef5b100720116.png",
+    "static/media/Tulip_Yellow.png": "/exeGardenApp/static/media/Tulip_Yellow.4ed6d25e482c6df46487.png",
+    "static/media/Tulip_Orange.png": "/exeGardenApp/static/media/Tulip_Orange.ff8bb74a80e9f53ce86d.png",
+    "static/media/Tulip_Red.png": "/exeGardenApp/static/media/Tulip_Red.9f92cef54af2a6e15776.png",
+    "static/media/Tulip_Pink.png": "/exeGardenApp/static/media/Tulip_Pink.713adc8e1501d8936267.png",
+    "static/media/Outfit-VariableFont_wght.ttf": "/exeGardenApp/static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
+    "static/media/plant.webp": "/exeGardenApp/static/media/plant.81f88f92c8700a23be02.webp",
+    "index.html": "/exeGardenApp/index.html",
+    "main.48f1e543.css.map": "/exeGardenApp/static/css/main.48f1e543.css.map",
+    "main.37968fc1.js.map": "/exeGardenApp/static/js/main.37968fc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48f1e543.css",
+    "static/js/main.37968fc1.js"
+  ]
+}
