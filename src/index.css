@@ -1,0 +1,658 @@
+:root {
+  /* Change to modify the height of the navbar and the */
+  /* margin of the jumbotron */
+  --navbar-height: 5rem;
+  --standardised-container-width: 85%;
+  --the-green: #003b3c80;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  background: linear-gradient(137.28deg, #438285 -5.33%, #003b3c 33.62%);
+  background-attachment: fixed;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: inherit !important;
+  color: inherit !important;
+} a:hover {
+  text-decoration: none !important;
+  color: gainsboro !important;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.spacer {
+  height: var(--navbar-height);
+}
+
+.navbar {
+  background: linear-gradient(137.28deg, #438285 -5.33%, #003b3c 33.62%);
+  background-attachment: fixed;
+  position: fixed !important;
+  justify-content: center !important;
+
+  height: var(--navbar-height);
+  width: 100%;
+  z-index: 12;
+
+  background-color: #003b3c !important;
+
+  box-shadow: 0 0 15px black;
+  z-index: 8;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: var(--standardised-container-width);
+}
+
+.nav-group {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav-group > * {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  color: white !important;
+
+  margin: 0 4rem 0 0;
+  height: 100%;
+  width: auto;
+}
+
+.nav-group:last-child > * {
+  margin: 0 0 0 2rem;
+}
+
+.navbar-text-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.jumbotron {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: url(./res/plant.webp);
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: fill;
+
+  padding: 100px 0 100px 0;
+
+} 
+
+.jumbotron-container {
+  width: var(--standardised-container-width);
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.jumbotron-container > h1, p {
+  padding: 15px;
+  border-radius: 2px;
+  background-color: #003b3c80;
+  color: white;
+
+  z-index: 2;
+}
+
+.jumbotron-bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column nowrap; 
+
+  background-color: white;
+  padding: 4rem;
+  border-radius: 2rem;
+
+  height: 35rem;
+  width: 35rem;
+}
+
+.form-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 5%;
+}
+
+.form-title {
+  margin-bottom: 1.7rem;
+}
+
+.btn-login {
+  width: 100%;
+  box-shadow: 0 2px 3px gray;
+}
+
+.form-container > hr {
+  width: 100%;
+  margin: 30px 0 30px 0;
+  border-top-color: #003b3c40;
+}
+
+.auth-button {
+  height: 4rem;
+  align-items: center;
+  cursor: pointer;
+} .auth-button:hover {
+  color: black !important;
+
+  background-color: lightgray;
+  transition: background-color 0.5s;
+} 
+
+.btn {
+  background-color: #00dea5 !important;
+  border-color: #00dea5 !important;
+  transition: 0.5s background-color !important;
+} .btn:hover {
+  background-color: lightgreen !important;
+  border-color: lightgreen !important;
+}
+
+.container {
+  width: var(--standardised-container-width);
+}
+
+
+#congrats--img {
+  height: 16rem;
+  width: 16rem;
+  margin-bottom: 2rem;
+
+}
+
+#congrats--text {
+  margin: 0;
+}
+
+#prize--text {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.congrats--form {  
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  padding: 4rem;
+  border-radius: 2rem;
+
+  height: 35rem;
+  width: 25rem;
+  margin-top: 3em;
+}
+
+.congrats--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main--container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.garden--form {  
+  align-items: center;
+  justify-content: center;
+  
+  background-color: white;
+
+  padding: 4rem;
+  padding-top: 0;
+
+  height: 35rem;
+  width: 25rem;
+  margin: 0;
+}
+
+
+.garden--imgdiv {
+  position:relative;
+  top: 0;
+  left: 0;
+  height: 16rem;
+  width: 35rem;
+}
+
+.garden--img{
+  height: 16rem;
+  width: 35rem;
+}
+
+.garden--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garden--locdiv{
+  position: absolute;
+  top: 50%; /* Align the text to the vertical center */
+  left: 30%; /* Align the text to the horizontal center */
+  transform: translate(-50%, -50%); /* Center the text exactly in the middle */
+  text-align: center; /* Center-align the text */
+  color: white; /* Set the text color */
+}
+
+/* Leaderboard css */
+.leaderboard-wrapper {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userRow {
+  background-color: #112A12
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  background-color: #48691e;
+}
+
+.headerTable, .tableRowText {
+  border: 2px solid black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.choice--container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: white;
+  padding: 4rem;
+  padding-top: 0;
+
+  height: 35rem;
+  width: 35rem;
+}
+
+.detail--form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+
+  background-color: rgb(226, 218, 218);
+  padding: 4rem;
+  border-radius: 2rem;
+
+  height: 20rem;
+
+  box-shadow: black 2px 2px 4px;
+}
+
+.modal--wrapper {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#friends--element {  
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 30rem;
+  margin-top: 1em;
+}
+
+#friends--element > button {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+
+#friends--element > h1 {
+  margin: 0 0 0 0.8rem;
+
+}
+#friend-btn-container {
+    margin: 0 0.8rem 0 0;
+    margin-left: auto;
+}
+#friend-btn-container > button{
+  margin-left: 0.5rem;
+}
+
+#friends--container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#friend-search-box {
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#no-friends-txt {
+  font-size: 1.5rem;
+}
+
+#add-friends-txt {
+  background-color: transparent;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#add-friends-btn {
+  align-items: center;
+  margin: 0;
+}
+
+#add-friends-container {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile{
+  width: 400px;
+  display: block;
+}
+
+.profile-info {
+  display: flex;
+}
+
+.profile-info >h2{ 
+  margin-left: auto;
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24;
+  padding: 2rem;
+}
+
+.admin-navbar {
+  height: 5rem;
+  justify-self: center;
+
+  box-shadow: 0 2px 5px black;
+
+  background-color: white;
+  z-index: 0;
+}
+
+.admin-navbar-buttons {
+  color: black !important;
+  font-size: 200% !important;
+}
+
+.terms-container {
+  width: 50vh;
+  height: 40vh;
+
+  overflow: scroll;
+}
+
+.user-dropdown-link:hover {
+  color: black !important;
+}
+
+.settings-box {
+  display: flex;
+  position: absolute;
+
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  height: auto;
+  
+  min-height: 30vh;
+  background-color: white;
+
+  box-shadow: 24;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.settings-box > * {
+  margin-bottom: 1rem;
+}
+
+.settings-box > button {
+  width: 50%;
+}
+
+.settings-button-delete {
+  background-color: #d11a2a !important;
+  border: #d11a2a !important;
+
+  color: white !important;
+}
+
+.settings-button-delete:hover {
+  background-color: #a3101d !important;
+  border: #a3101d !important;
+}
+
+/* 
+Some hacky workarounds for the admin table. Basically reverting all
+of the warcrimes Mui has committed on this table
+*/
+.admin-table-container {
+  background-color: white !important;
+}
+
+.admin-table-header > th {
+  padding-left: 1.25rem !important;
+}
+
+.admin-table-btn {
+  justify-content: space-between !important;
+
+  font-family: inherit !important;
+  font-size: 1rem !important;
+
+  padding: 0.75rem !important;
+  width: 100%;
+
+  text-decoration: none !important;
+  text-transform: none !important;
+  color: black !important;
+}
+
+.admin-table-btn:after {
+  position: absolute;
+  bottom: 0 !important;
+  left: 0 !important;
+  
+  height: 1px;
+  width: 100%;
+
+  content: "";
+  background: grey;
+}
+
+.admin-table-btn > div:first-child > span {
+  padding-right: 2rem !important;
+}
+
+#loading-text {
+  background-color: transparent;
+}
+
+.plant-img {
+  position: relative;
+  z-index: 3;
+  width: 8rem;
+}
+
+.plant-img-selected {
+  position: relative;
+  z-index: 3;
+  width: 8rem;
+  background-color: lightgray;
+}
+
+.plant-img-unowned {
+  position: relative;
+  z-index: 3;
+  width: 8rem;
+  filter: grayscale(1)
+}
+
+.plant-img:hover {
+  background-color: rgb(136, 136, 136);
+}
+
+.plant-pick-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.plant-row-1, .plant-row-2, .plant-row-3, .plant-row-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#plant-1 {
+  position: absolute;
+  top: 52%;
+  left: 0%;
+  width: 13rem;
+  z-index: 3;
+}
+
+#plant-2 {
+  position: absolute;
+  top: 52%;
+  left: 35%;
+  width: 13rem;
+  z-index: 3;
+}
+
+#plant-3 {
+  position: absolute;
+  top: 52%;
+  left: 70%;
+  width: 13rem;
+  z-index: 3;
+}
+
+/* Termly imports */
+[data-custom-class='body'],[data-custom-class='body'] *{background: transparent !important;
+}[data-custom-class='title'],[data-custom-class='title'] *{font-family: Arial !important;
+font-size: 26px !important;
+color: #000000 !important;
+}[data-custom-class='subtitle'],[data-custom-class='subtitle'] *{font-family: Arial !important;
+color: #595959 !important;
+font-size: 14px !important;
+}[data-custom-class='heading_1'],[data-custom-class='heading_1'] *{font-family: Arial !important;
+font-size: 19px !important;
+color: #000000 !important;
+}[data-custom-class='heading_2'],[data-custom-class='heading_2'] *{font-family: Arial !important;
+font-size: 17px !important;
+color: #000000 !important;
+}[data-custom-class='body_text'],[data-custom-class='body_text'] *{color: #595959 !important;
+font-size: 14px !important;
+font-family: Arial !important;
+}[data-custom-class='link'],[data-custom-class='link'] *{color: #3030F1 !important;
+font-size: 14px !important;
+font-family: Arial !important;
+word-break: break-word !important;
+}
+
+ul {
+  list-style-type: square;
+  }
+
+  ul>li>ul {
+  list-style-type: circle;
+  }
+
+  ul>li>ul>li>ul {
+  list-style-type: square;
+  }
+
+  ol li {
+  font-family: Arial;
+  }
+
+.no-friends-txt {
+  background-color: transparent;
+  font-size: 2rem;
+}
