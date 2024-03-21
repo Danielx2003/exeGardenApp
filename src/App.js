@@ -28,7 +28,6 @@ function App() {
   return (
     <div className="site-wrapper">
       <div className="spacer"></div>
-      <BrowserRouter>
       <IPContext.Provider value={'localhost'}>
       <Nav/>
         <Routes>
@@ -82,7 +81,6 @@ function App() {
           />
         </Routes>
         </IPContext.Provider>
-      </BrowserRouter>
     </div>
   )
 }
